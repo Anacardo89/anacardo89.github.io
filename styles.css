@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(44, 44, 44);
+    color: rgb(83, 201, 32);
+}
+
+/* Header */
+header {
+    background-color: rgb(70, 70, 70);
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style: none;
+    height: 60px;
+}
+
+header li {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(83, 201, 32);
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    
+}
+
+header a:hover {
+    background-color: rgb(28, 28, 28);
+    height: 100%;
+}
+
+header a:visited {
+    color: rgb(83, 201, 32);
+}
+
+/* Hero Page */
+.heroPage {
+    height: 100vh;
+    width: 100%;
+    background-image: url('img/milky-way.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.heroPage h1 {
+    font-size: 3rem;
+    color: rgb(80, 238, 11);
+    margin: -75px 0 100px 50px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(66, 66, 66);
+}
+
+/* About me */
+.aboutMe {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.aboutMe p {
+    font-size: 1.5rem;
+    margin: 0 100px 0 50px;
+}
+
+/* Projects */
+.projects {
+    width: 100%;
+    background-color: rgb(96, 96, 96);
+}
+
+.projects h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.techImg img {
+    max-width: 50px;
+    height: auto;
+}
+
+.project {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+}
+
+.project__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
