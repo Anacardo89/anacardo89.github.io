@@ -23,14 +23,17 @@
             <h1>Backend Developer</h1>
         </div>
         <div class="aboutMe" id="aboutMe">
-            <p>Pedro Fortunato. Backend developer with a particular love for the Go programming language.</p>
-            <p>In the constant pursuit of learning, my projects showcase what is the perfect excuse to tuse something learned through study in a use case scenario.</p>
-            <p>As usually happens with good projects, one also unintendedly learns something new on the side as well. ;P</p>
+            <div class="aboutMe__text">
+                <p>Pedro Fortunato. Backend developer with a particular love for the Go programming language.</p>
+                <p>In the constant pursuit of learning, my projects showcase what is the perfect excuse to use something learned through study in a use case scenario.</p>
+                <p>As usually happens with good projects, one also unintendedly learns something new on the side as well. ;P</p>
+            </div>
+            <img class="aboutMe__img" src="img/go_mascot.png" alt="Go mascot"/>
         </div>
         <div class="projects" id="projects">
             <h1>Projects</h1>
             <div class="project">
-                <div class="project__info">
+                <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/tpsi25_blog" target="_blank">Lenic</a></h2>
                     <p class="project__text">Lenic is a social network that is being currently worked on. It makes use of encrypted cookies to manage session and websockets to provide real-time notifications to users. It works in tandem with a <a href="https://github.com/Anacardo89/mailer_sender" target="_blank">mailing microservice</a> I developed.</p>
                     <h3>Technologies used:</h3>
@@ -46,10 +49,11 @@
                         <a class="techImg" href="https://jquery.com/" target="_blank"><img src="img/jquery.png" alt="JQuery logo"/></a>
                     </div>
                 </div>
-                <img class="project__img" />
+                <img class="project__img--right" src="img/lenic.JPG" />
             </div>
             <div class="project">
-                <div class="project__info">
+                <img class="project__img--left" src="img/kanboards.gif" />
+                <div class="project__info--right">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/kanboards" target="_blank">Kanboards</a></h2>
                     <p class="project__text">Kanboards is a Trello clone for the CLI, using the bubbleTea framework that uses Elm architecture (Model View Update). It was used as a practical use case for my Go <a href="https://github.com/Anacardo89/ds" target="_blank">Data Structures</a> library</p>
                     <h3>Technologies used:</h3>
@@ -59,10 +63,9 @@
                         <a class="techImg" href="https://www.sqlite.org/" target="_blank"><img src="img/sqlite.jpeg" alt="SQLite logo"/></a>
                     </div>
                 </div>
-                <img class="project__img" />
             </div>
             <div class="project">
-                <div class="project__info">
+                <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/toDew" target="_blank">ToDew</a></h2>
                     <p class="project__text">ToDew is a Task Manager with drag and drop functionality, that i used to get grip on DOM manipulation and event triggers.</p>
                     <h3>Technologies used:</h3>
@@ -72,10 +75,11 @@
                         <a class="techImg" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="img/js.png" alt="JavaScript logo"/></a>
                     </div>
                 </div>
-                <img class="project__img" />
+                <img class="project__img--right" src="img/toDew.gif"/>
             </div>
             <div class="project">
-                <div class="project__info">
+                <img class="project__img--left" src="img/20fynety8.gif"/>
+                <div class="project__info--right">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/20fynety8" target="_blank">20fynety8</a></h2>
                     <p class="project__text">20fynety8 is a 2048 clone built with the Fyne GUI Framework. It's main purpose was to exercise matrix operations, but it's still fun to play. :P</p>
                     <h3>Technologies used:</h3>
@@ -84,32 +88,40 @@
                         <a class="techImg" href="https://fyne.io/" target="_blank"><img src="img/fyne_logo.png" alt="Fyne logo" /></a>
                     </div>
                 </div>
-                <img class="project__img" />
             </div>
             <div class="project">
-                <div class="project__info">
+                <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/20fynety8" target="_blank">Maze Solver</a></h2>
                     <p class="project__text">Maze solver is exactly as the name indicates, it solves a random maze it itself creates. It was used to apply the Depth-First Search algorithm.</p>
                     <h3>Technologies used:</h3>
                     <div class="project__tech">
-                        <a class="techImg" href="https://www.python.org/" target="_blank"><img src="img/python_tkinter.webp" alt="Python Tkinter logo logo" /></a>
+                        <a class="techImg" href="https://www.python.org/" target="_blank"><img src="img/python.webp" alt="Python Tkinter logo logo" /></a>
                     </div>
                 </div>
-                <img class="project__img" />
+                <img class="project__img--right" src="img/maze_solver.gif"/>
             </div>
         </div>
-        <div class="contact" id="contact">
-            <h3>Got something you want built? Let's talk about it!</h3>
-            <a href="mailto:pedro.fortunato.89@gmail.com">Email me</a>
-            <br>
-            <h3>Or check out my Social Media pages: </h3>
-            <a href="https://github.com/Anacardo89" target="_blank"><img src="img/github.webp" alt="Github logo" /></a>
-            <a href="https://www.linkedin.com/in/pedro-fortunato-5b50ba170/" target="_blank"><img src="img/linkedin.webp" alt="Linkedin logo" /></a>
+        <div class="contact-container" id="contact">
+            <div class="contact">
+                <h1>Let's Talk</h1>
+                <br>
+                <div class="contact__phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+351 91 876 39 50</p>
+                </div>
+                <div class="contact__email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>pedro.fortunato.89@gmail.com</p>
+                </div>
+                <div class="contact__links">
+                    <a href="https://github.com/Anacardo89" target="_blank"><img src="img/github.webp" alt="Github logo" /></a>
+                    <a href="https://www.linkedin.com/in/pedro-fortunato-5b50ba170/" target="_blank"><img src="img/linkedin.png" alt="Linkedin logo" /></a>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <a href="#">Back to top</a>
     </footer>
-
 </body>
 </html>
