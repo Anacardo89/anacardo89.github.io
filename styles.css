@@ -237,8 +237,14 @@ header a:visited {
 
 /* Contact */
 .contact-container {
-    height: 100vh;
+    min-height: 100%;
     padding: 100px 100px 0 100px;
+}
+
+.contact-container:after {
+    content: "";
+    display: block;
+    height: 60px;
 }
 
 .contact {
@@ -301,6 +307,7 @@ i {
 
 /* Footer */
 footer {
+    height: 60px;
     display: flex;
     justify-content: center;
     margin: 0;
