@@ -17,12 +17,14 @@ p {
 /* Header */
 header {
     background-color: rgb(0, 0, 0);
-    min-height: 60px;
+    min-height: 6vh;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
+    overflow-x: auto;
+    padding: 0;
 }
 
 header ul {
@@ -31,7 +33,9 @@ header ul {
     justify-content: space-evenly;
     align-items: stretch;
     list-style: none;
-    height: 60px;
+    height: 6vh;
+    margin: 0;
+    padding: 0;
 }
 
 header li {
@@ -49,7 +53,7 @@ header a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
+    padding: 0 0.5rem;
     
 }
 
@@ -60,6 +64,22 @@ header a:hover {
 
 header a:visited {
     color: rgb(83, 201, 32);
+}
+
+@media (max-width: 768px) {
+    header nav {
+        width: 100vw;
+    }
+
+    header ul {
+        align-items: center;
+        height: fit-content;
+    }
+
+    header a {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
 }
 
 /* Hero Page */
@@ -106,6 +126,14 @@ header a:visited {
     -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
+@media (max-width: 600px) {
+    .heroPage h1 {
+        font-size: 2rem;
+        -webkit-text-stroke-width: 2px;
+        overflow: auto;
+    }
+}
+
 /* About me */
 .aboutMe {
     height: 100vh;
@@ -113,17 +141,35 @@ header a:visited {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 3rem;
 }
 
 .aboutMe__text p {
     font-size: 1.7rem;
     font-weight: bold;
-    margin: 30px;
+    margin: 1.5rem;
 }
 
 .aboutMe__img {
-    height: 100vh;
+    max-height: 100vh;
+    height: auto;
+    max-width: 50vw;
+}
+
+@media (max-width: 600px) {
+    .aboutMe {
+        flex-direction: column-reverse;
+    }
+
+    .aboutMe__text p {
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .aboutMe__img {
+        margin-top: 0;
+        margin-bottom: -2rem;
+    }
 }
 
 /* Projects */
@@ -134,15 +180,15 @@ header a:visited {
 .projects h1 {
     font-size: 4rem;
     text-align: center;
-    padding: 75px 0;
+    padding: 4rem 0;
 }
 
 .project {
     height: auto;
     display: flex;
     flex-direction: row;
-    padding: 20px 50px;
-    margin: 10px 100px;
+    padding: 2rem 3rem;
+    margin: 2vh 5vw;
     border: solid rgb(80, 238, 11) 5px;
     border-radius: 20px;
     align-items: center;
@@ -154,7 +200,7 @@ header a:visited {
     flex-direction: column;
     font-size: 1.3rem;
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 3rem;
 }
 
 .project__info--left a {
@@ -171,7 +217,7 @@ header a:visited {
 }
 
 .project__info--left h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .project__info--right {
@@ -180,7 +226,7 @@ header a:visited {
     flex-direction: column;
     font-size: 1.3rem;
     font-weight: bold;
-    padding-left: 40px;
+    padding-left: 4rem;
 }
 
 .project__info--right a {
@@ -197,11 +243,11 @@ header a:visited {
 }
 
 .project__info--right h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .techImg img {
-    max-height: 50px;
+    max-height: 3rem;
     width: auto;
 }
 
@@ -215,7 +261,7 @@ header a:visited {
 
 .project__img--right:hover {
     transform: translate(-50%, 0) scale(1.5);
-    width: 1000px;
+    width: 65vw;
     left: 50%;
     z-index: 5;
 }
@@ -230,26 +276,55 @@ header a:visited {
 
 .project__img--left:hover {
     transform: translate(50%, 0) scale(1.5);
-    width: 1000px;
+    width: 65vw;
     left: 50%;
     z-index: 5;
+}
+
+@media (max-width: 600px) {
+
+    .projects h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 1rem 1rem;
+        margin: 2vh 5vw;
+    }
+
+    .project__info--left {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+
+    .project__info--right {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    .project__img--right:hover {
+        transform: scale(2.5);
+        width: 90vw;
+    }
+
+    .project__img--left:hover {
+        transform: scale(2.5);
+        width: 90vw;
+    }
 }
 
 /* Contact */
 .contact-container {
     min-height: 100%;
-    padding: 100px 100px 0 100px;
-}
-
-.contact-container:after {
-    content: "";
-    display: block;
-    height: 60px;
+    padding: 10vh 10vw;
 }
 
 .contact {
     height: fit-content;
-    margin: 0 100px;
+    margin: 0 5vw;
     border: solid rgb(80, 238, 11) 5px;
     border-radius: 20px;
 }
@@ -257,8 +332,8 @@ header a:visited {
 .contact h1 {
     font-size: 4rem;
     text-align: center;
-    padding: 75px 0 0;
-    margin-bottom: 75px;
+    padding: 7vh 0 0;
+    margin-bottom: 5vh;
 }
 
 i {
@@ -276,7 +351,7 @@ i {
 }
 
 .contact__phone i {
-    margin: 20px;
+    margin: 1rem;
 }
 
 .contact__email {
@@ -290,7 +365,7 @@ i {
 }
 
 .contact__email i {
-    margin: 20px;
+    margin: 1rem;
 }
 
 .contact__links {
@@ -301,13 +376,54 @@ i {
 }
 
 .contact__links img {
-    height: 100px;
+    height: 10vh;
     margin: 2rem;
+}
+
+@media (max-width: 600px) { 
+    .contact-container {
+        min-height: 100%;
+        padding: 5vh 3vw;
+    }
+
+    .contact {
+        margin: 0;
+    }
+
+    .contact h1 {
+        font-size: 3rem;
+    }
+
+    .contact__phone {
+        flex-direction: column;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .contact__phone i {
+        font-size: 2rem;
+    }
+
+    .contact__email {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+    
+    .contact__email i {
+        font-size: 2rem;
+    }
+
+    .contact__links img {
+        height: 15vh;
+    }
 }
 
 /* Footer */
 footer {
-    height: 60px;
+    height: 6vh;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -323,7 +439,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 15px;
+    padding: 2rem 1.5rem;
 }
 
 footer a:hover {
