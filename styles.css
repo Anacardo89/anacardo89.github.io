@@ -326,18 +326,20 @@ header a:visited {
     }
 
     .project__img--right {
-        max-width: 80vw;
+        max-width: 86vw;
+        transition: none;
     }
 
     .project__img--right:hover {
-        transform: scale(1);
+        transform: none;
     }
 
     .project__img--left {
-        max-width: 80vw;
+        max-width: 86vw;
+        transition: none;
     }
     .project__img--left:hover {
-        transform: scale(1);
+        transform: none;
     }
 }
 
