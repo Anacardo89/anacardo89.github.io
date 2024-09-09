@@ -128,9 +128,11 @@ header a:visited {
 
 @media (max-width: 600px) {
     .heroPage h1 {
-        font-size: 2rem;
-        -webkit-text-stroke-width: 2px;
+        font-size: 4rem;
+        -webkit-text-stroke-width: 4px;
         overflow: auto;
+        margin: 3rem 0;
+        text-align: center;
     }
 }
 
@@ -286,7 +288,7 @@ header a:visited {
     .projects h1 {
         font-size: 3rem;
         text-align: center;
-        padding: 2rem 0;
+        padding: 4rem 0 2rem;
     }
 
     .project {
@@ -383,7 +385,7 @@ i {
 @media (max-width: 600px) { 
     .contact-container {
         min-height: 100%;
-        padding: 5vh 3vw;
+        padding: 10vh 3vw 5vh;
     }
 
     .contact {
