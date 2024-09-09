@@ -185,7 +185,7 @@ header a:visited {
     padding: 4rem 0;
 }
 
-.project {
+.project--odd {
     height: auto;
     display: flex;
     flex-direction: row;
@@ -195,6 +195,18 @@ header a:visited {
     border-radius: 20px;
     align-items: center;
 }
+
+.project--even {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 3rem;
+    margin: 2vh 5vw;
+    border: solid rgb(80, 238, 11) 5px;
+    border-radius: 20px;
+    align-items: center;
+}
+
 
 .project__info--left {
     flex: 1;
@@ -291,8 +303,14 @@ header a:visited {
         padding: 4rem 0 2rem;
     }
 
-    .project {
+    .project--odd {
         flex-direction: column;
+        padding: 1rem 1rem;
+        margin: 2vh 5vw;
+    }
+
+    .project--even {
+        flex-direction: column-reverse;
         padding: 1rem 1rem;
         margin: 2vh 5vw;
     }
@@ -307,14 +325,19 @@ header a:visited {
         padding-left: 0;
     }
 
-    .project__img--right:hover {
-        transform: scale(2.5);
-        width: 90vw;
+    .project__img--right {
+        max-width: 80vw;
     }
 
+    .project__img--right:hover {
+        transform: scale(1);
+    }
+
+    .project__img--left {
+        max-width: 80vw;
+    }
     .project__img--left:hover {
-        transform: scale(2.5);
-        width: 90vw;
+        transform: scale(1);
     }
 }
 
