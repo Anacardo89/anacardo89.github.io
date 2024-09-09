@@ -332,6 +332,7 @@ header a:visited {
 
     .project__img--right:hover {
         transform: none;
+        width: 86vw;
     }
 
     .project__img--left {
@@ -340,6 +341,7 @@ header a:visited {
     }
     .project__img--left:hover {
         transform: none;
+        width: 86vw;
     }
 }
 
