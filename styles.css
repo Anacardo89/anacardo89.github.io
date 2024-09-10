@@ -103,7 +103,6 @@ header a:visited {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(2px);
     z-index: 1; 
 }
 
@@ -122,16 +121,16 @@ header a:visited {
 
 .heroPage h1 {
     font-size: 8rem;
-    color: rgb(80, 238, 11);
+    color: white;
     margin: 0;
-    -webkit-text-stroke-width: 8px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
 }
 
 @media (max-width: 600px) {
     .heroPage h1 {
         font-size: 4rem;
-        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 2px;
         overflow: auto;
         margin: 3rem 0;
         text-align: center;
