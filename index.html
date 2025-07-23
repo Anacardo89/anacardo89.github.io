@@ -38,7 +38,7 @@
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/lenic" target="_blank">Lenic</a></h2>
                     <br>
                     <p class="project__text">
-                      A lightweight social network built in Go using the Gorilla Web Toolkit, featuring session handling via cookies and real-time updates through WebSockets. Includes a custom <a href="https://github.com/Anacardo89/mailer_sender" target="_blank">mailing microservice</a> and a <a href="https://github.com/Anacardo89/lenic_api" target="_blank">gRPC API</a> for structured inter-service communication.  
+                      A lightweight social network built in Go using the Gorilla Web Toolkit, featuring session handling via cookies and real-time updates through WebSockets. Includes a custom <a href="https://github.com/Anacardo89/mailer_sender" target="_blank">mailing microservice</a> and a <a href="https://github.com/Anacardo89/lenic_api" target="_blank">gRPC API</a> to interact with the app through Postman.  
                       Emphasis on scalable, modular back-end design using RabbitMQ and Docker.  
                       Currently undergoing a rework to enable <a href="https://github.com/Anacardo89/lenic_infra" target="_blank">deployment</a> on AWS, leveraging EC2, RDS, ElastiCache, S3, and CI/CD pipelines, as well as migrating the database from MySQL to PostgreSQL.  
                       Also, a modular contract-based library for social network development to be integrated into the project backend is planned for the near future.
@@ -62,8 +62,31 @@
                 <img class="project__img--right" src="img/lenic.JPG" />
             </div>
             <div class="project--even">
-                <img class="project__img--left" src="img/kanboards.gif" />
                 <div class="project__info--right">
+                    <h2 class="project__title"><a href="https://github.com/Anacardo89/doubleOrNothingDice" target="_blank">Double or Nothing Dice</a></h2>
+                    <br>
+                    <p class="project__text">
+                      Double or Nothing Dice is a web-based betting game developed in Go as part of a take-home assignment that led to my current role at Vertsa Play.
+                      The game features real-time gameplay via WebSockets and a REST API for user management, including JWT authentication and email verification.
+                      Redis is used to persist the current game state, while PostgreSQL handles user data and stores the game upon finishing.
+                      Containerized with Docker for straightforward deployment. Players can register and authenticate through email verification, place bets, place bets, and manage their balance through a client app like Postman.
+                    </p>
+                    <br>
+                    <div class="project__tech--container">
+                        <h3>Technologies used:</h3>
+                        <div class="project__tech">
+                            <a class="techImg" href="https://go.dev/" target="_blank"><img src="img/go.png" alt="Go logo" /></a>
+                            <a class="techImg" href="https://gorilla.github.io/" target="_blank"><img src="img/gorilla.png" alt="Gorilla Web Toolkit logo"/></a>
+                            <a class="techImg" href="https://www.postgresql.org/" target="_blank"><img src="img/postgresql.png" alt="PostgreSQL logo"/></a>
+                            <a class="techImg" href="https://redis.io/" target="_blank"><img src="img/redis.png" alt="Redis logo"/></a>
+                            <a class="techImg" href="https://www.docker.com/" target="_blank"><img src="img/docker.png" alt="Docker logo"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project--odd">
+                <img class="project__img--right" src="img/kanboards.gif" />
+                <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/kanboards" target="_blank">Kanboards</a></h2>
                     <br>
                     <p class="project__text">A Trello-style task board for the command line, built using Go and the BubbleTea framework. Designed around the Elm architecture (Model-View-Update), this project served as a real-world implementation of my custom Go <a href="https://github.com/Anacardo89/ds" target="_blank">Data Structures</a> library, with SQLite for persistent storage.</p>
