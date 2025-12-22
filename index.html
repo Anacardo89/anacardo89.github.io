@@ -38,9 +38,10 @@
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/lenic" target="_blank">Lenic</a></h2>
                     <br>
                     <p class="project__text">
-                        A social network, it started as a small classroom experiment where colleagues could post and interact over the local network.
-                        Over time, it evolved into my most in-depth side project, encompassing a fully-featured backend handling both HTTP and websockets, a <a href="https://github.com/Anacardo89/mailer_sender" target="_blank">mailing microservice</a>, and a <a href="https://github.com/Anacardo89/lenic_api" target="_blank">gRPC API</a>.
-                        I recently <a href="https://github.com/Anacardo89/lenic/tree/aws_deploy" target="_blank">reworked</a> the backend and am currently wiring and debugging the frontend in preparation for deployment on AWS. I’ve already built a <a href="https://github.com/Anacardo89/lenic_infra" target="_blank">Terraform skeleton</a> to provision EC2 and RDS instances, bringing the project closer to a production-ready state.
+                        Social networking platform developed as an end-to-end backend system, supporting HTTP and WebSocket-based real-time features.
+                        The project evolved into a modular architecture including a dedicated <a href="https://github.com/Anacardo89/mailer_sender" target="_blank">mailing microservice</a>, and a <a href="https://github.com/Anacardo89/lenic_api" target="_blank">gRPC API</a>.
+                        The backend was recently reworked with a strong focus on architecture and production readiness, and the infrastructure is provisioned using <a href="https://github.com/Anacardo89/lenic_infra" target="_blank">Terraform</a>.
+                        The system is currently deployed and running on <a href="http://ec2-35-181-166-192.eu-west-3.compute.amazonaws.com/home" target="_blank">AWS</a>.
                     </p>
                     <br>
                     <div class="project__tech--container">
@@ -60,12 +61,32 @@
                 </div>
                 <img class="project__img--right" src="img/lenic.JPG" />
             </div>
-            <div class="project--even">
+            <div class="project--odd">
+                <div class="project__info--left">
+                    <h2 class="project__title"><a href="https://github.com/Anacardo89/task-mgmt-api" target="_blank">Task Management API</a></h2>
+                    <br>
+                    <p class="project__text">
+                        Task management REST API with Role-Based Access Control (RBAC), designed with clean architecture and production concerns in mind. Features database migrations, containerized dependencies, and a comprehensive testing strategy using testcontainers for PostgreSQL and NATS, along with full integration test coverage for all API endpoints.
+                    </p>
+                    <br>
+                    <div class="project__tech--container">
+                        <h3>Technologies used:</h3>
+                        <div class="project__tech">
+                            <a class="techImg" href="https://go.dev/" target="_blank"><img src="img/go.png" alt="Go logo" /></a>
+                            <a class="techImg" href="https://gorilla.github.io/" target="_blank"><img src="img/gorilla.png" alt="Gorilla Web Toolkit logo"/></a>
+                            <a class="techImg" href="https://www.postgresql.org/" target="_blank"><img src="img/postgresql.png" alt="PostgreSQL logo"/></a>
+                            <a class="techImg" href="https://nats.io/" target="_blank"><img src="img/nats-logo.png" alt="NATS logo"/></a>
+                            <a class="techImg" href="https://www.docker.com/" target="_blank"><img src="img/docker.png" alt="Docker logo"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project--odd">
                 <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/trading_chart_aggregator" target="_blank">Trading Chart aggregator</a></h2>
                     <br>
                     <p class="project__text">
-                        This project was developed during a single afternoon as part of a coding challenge.
+                        A small data pipeline.
                         It connects to the Binance API via WebSocket to gather real-time tick data for multiple coins, aggregates OHLC candlesticks for each, and streams the aggregated data through gRPC server every tick.
                         Completed candlesticks are persisted to DB. The project includes unit tests for the aggregator and is fully containerized with Docker for easy deployment and testing.
                     </p>
@@ -81,12 +102,12 @@
                     </div>
                 </div>
             </div>
-            <div class="project--odd">
+            <div class="project--even">
                 <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/fizzbuzz-api" target="_blank">FizzBuzz API</a></h2>
                     <br>
                     <p class="project__text">
-                        A production-ready REST API built in Go as part of a one-week coding challenge.
+                        A production-ready REST API built in Go.
                         It extends the classic fizz-buzz with configurable parameters and includes JWT authentication, input validation, database-backed request statistics with pagination, Swagger docs, Docker Compose deployment, and full unit/integration tests — all in a clean, modular architecture designed for maintainability.
                     </p>
                     <br>
@@ -102,12 +123,12 @@
                     </div>
                 </div>
             </div>
-            <div class="project--even">
+            <div class="project--odd">
                 <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/doubleOrNothingDice" target="_blank">Double or Nothing Dice</a></h2>
                     <br>
                     <p class="project__text">
-                        This project was developed in a week as a coding challenge for a job interview at Vertsa, where i currently work.
+                        A small double or nothing game.
                         The game features real-time gameplay via WebSockets and a REST API for user management, including JWT authentication and email verification.
                         Redis is used to persist the current game state, while PostgreSQL handles user data and stores the game upon finishing.
                         Containerized with Docker for straightforward deployment. Players can register and authenticate through email verification, amd play the game, place bets, and manage their balance through Postman.
@@ -125,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project--odd">
+            <div class="project--even">
                 <img class="project__img--left" src="img/kanboards.gif" />
                 <div class="project__info--right">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/kanboards" target="_blank">Kanboards</a></h2>
