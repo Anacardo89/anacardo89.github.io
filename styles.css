@@ -106,11 +106,25 @@ header a:visited {
 }
 
 .heroPage h1 {
-    font-size: 8rem;
+    font-size: 4rem;
     color: white;
     margin: 0;
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: black;
+}
+
+.heroPage p {
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+.heroPage a {
+    text-decoration: none;
+    color: white;
+}
+
+.heroPage a:hover {
+    color: rgb(108, 197, 69);
 }
 
 @media (max-width: 600px) {
@@ -120,6 +134,20 @@ header a:visited {
         overflow: auto;
         margin: 3rem 0;
         text-align: center;
+    }
+
+    .heroPage p {
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    
+    .heroPage a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .heroPage a:hover {
+        color: rgb(108, 197, 69);
     }
 }
 
