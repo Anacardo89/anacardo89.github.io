@@ -65,6 +65,29 @@
             </div>
             <div class="project--odd">
                 <div class="project__info--left">
+                    <h2 class="project__title"><a href="https://github.com/Anacardo89/order_svc_hex" target="_blank">Hexagonal Order Service</a> Work in progress</h2>
+                    <br>
+                    <p class="project__text">
+                        Two sister services, developed in a hexagonal architecture. The first service, order_api, exposes a REST API and communicates with the second service order_svc using Kafka for write operations and gRPC for read operations, bbeing CQRS compliant, ultimately accessing DB.
+                        The service currently has traceability correctly instrumented and propagated through service boundaries by way of Kafka headers and gRPC interceptors. Request, trace and span IDs also correctly captured in logs exported to Loki.
+                    </p>
+                    <br>
+                    <div class="project__tech--container">
+                        <br>
+                        <h3>Technologies used:</h3>
+                        <div class="project__tech">
+                            <a class="techImg" href="https://go.dev/" target="_blank"><img src="img/go.png" alt="Go logo" /></a>
+                            <a class="techImg" href="https://gorilla.github.io/" target="_blank"><img src="img/gorilla.png" alt="Gorilla Web Toolkit logo"/></a>
+                            <a class="techImg" href="https://grpc.io/" target="_blank"><img src="img/gRPC_logo.png" alt="gRPC logo"/></a>
+                            <a class="techImg" href="https://www.postgresql.org/" target="_blank"><img src="img/postgresql.png" alt="PostgreSQL logo"/></a>
+                            <a class="techImg" href="https://kafka.apache.org/" target="_blank"><img src="img/kafka_logo.png" alt="Kafka logo"/></a>
+                            <a class="techImg" href="https://www.docker.com/" target="_blank"><img src="img/docker.png" alt="Docker logo"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project--odd">
+                <div class="project__info--left">
                     <h2 class="project__title"><a href="https://github.com/Anacardo89/task-mgmt-api" target="_blank">Task Management API</a></h2>
                     <br>
                     <p class="project__text">
